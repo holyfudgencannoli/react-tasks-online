@@ -1,0 +1,177 @@
+#root {
+  /* max-width: 1280px; */
+  max-width: 85%;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  font-family: "Varela Round", sans-serif;
+
+}
+
+#buttons{
+    margin: auto;
+}
+
+
+
+#buttons > a, #login-links > a {
+    margin: 1rem; 
+}
+
+.varela-round {
+  font-family: "Varela Round", sans-serif;
+}
+
+
+#top{
+    display: flex;
+    flex-direction: row;
+}
+
+#task-input-form{
+  background-color: #888;
+  display: flex;
+  flex-direction: column;
+  padding: 3rem;
+  margin: 1rem auto
+  
+}
+
+#task-input-form > *{
+
+
+}
+
+#task-input-form > button, .task-input-buttons {
+    margin: 1rem;
+    
+}
+
+#task-box{
+    display: flex;
+    flex-direction: row;
+    margin: 1rem;
+}
+
+.task-line{
+    margin: auto;
+}
+
+.task-input{
+    margin: 1rem;
+    height: 2rem;
+}
+
+.done-button{
+    /* margin: 1rem; */
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+#signup-box form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+#login-box{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.login-input-label{
+  padding: 1rem;
+  position: relative;
+}
+
+#login-box-buttons{
+  padding: 2rem;
+}
+
+#login-text{
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+#login-links{
+	padding: 2rem;
+    cursor: pointer;
+    gap: 3rem;
+}
+
+.card {
+  /* padding: 2em; */
+  width: 100%;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+/* Base (mobile-first) */
+.chart-container {
+    width: 100%;
+    margin: auto;
+}
+
+/* Small devices (≥600px) */
+@media (min-width: 600px) {
+  .chart-container {
+    height: 400px;
+  }
+}
+
+/* Medium devices (≥900px) */
+@media (min-width: 900px) {
+  .chart-container {
+    height: 500px;
+  }
+
+    .card {
+        padding: 0em;
+        width: 100%;
+    }
+}
+
+/* Large devices (≥1200px) */
+@media (min-width: 1200px) {
+  .chart-container {
+    height: 600px;
+  }
+}
+
+/* Extra large devices (≥1536px) */
+@media (min-width: 1536px) {
+  .chart-container {
+    height: 700px;
+  }
+}
+

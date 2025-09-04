@@ -1,0 +1,59 @@
+/* Row container */
+.strike-row {
+  position: relative;
+  overflow: visible;
+}
+
+/* Completed rows (default: static line, no animation) */
+.strike-row.completed::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  height: 2px;
+  width: 90%;
+  margin-left: 2rem;
+  background: black;
+  z-index: 10;
+}
+
+.strike-row.new-completed::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  height: 2px;
+  width: 90%;
+  margin-left: 2rem;
+  background: black;
+  z-index: 10;
+}
+
+/* When page first loads, animate strike */
+.page-loading .strike-row.completed::after {
+  width: 0%; /* start collapsed */
+  animation: strike 3s ease-in-out forwards;
+}
+
+/* Keyframes */
+@keyframes strike {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 90%;
+  }
+}
+
+/* Dim the text */
+.strike-row.completed .MuiDataGrid-cell {
+  color: #888;
+  transition: color 0.5s ease-in-out;
+}
+
+/* Newly completed row animation */
+.strike-row.new-completed::after {
+  width: 0%; /* start collapsed */
+  animation: strike 3s ease-in-out forwards;
+}
+
